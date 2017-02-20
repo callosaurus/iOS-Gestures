@@ -13,6 +13,10 @@
 		3FB138141E56D72200989426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB138121E56D72200989426 /* Main.storyboard */; };
 		3FB138161E56D72200989426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB138151E56D72200989426 /* Assets.xcassets */; };
 		3FB138191E56D72200989426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB138171E56D72200989426 /* LaunchScreen.storyboard */; };
+		3FB138221E56D8BE00989426 /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB138211E56D8BE00989426 /* PanViewController.m */; };
+		3FB1384B1E57A33500989426 /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1384A1E57A33500989426 /* TapViewController.m */; };
+		3FB1384E1E57A5A200989426 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1384D1E57A5A200989426 /* PinchViewController.m */; };
+		3FB138511E57AE0800989426 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB138501E57AE0800989426 /* SwipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		3FB138151E56D72200989426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB138181E56D72200989426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB1381A1E56D72200989426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB138201E56D8BE00989426 /* PanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		3FB138211E56D8BE00989426 /* PanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		3FB138491E57A33500989426 /* TapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
+		3FB1384A1E57A33500989426 /* TapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
+		3FB1384C1E57A5A200989426 /* PinchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		3FB1384D1E57A5A200989426 /* PinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		3FB1384F1E57AE0800989426 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		3FB138501E57AE0800989426 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +70,16 @@
 		3FB138081E56D72200989426 /* iOS Gestures */ = {
 			isa = PBXGroup;
 			children = (
-				3FB1380C1E56D72200989426 /* AppDelegate.h */,
-				3FB1380D1E56D72200989426 /* AppDelegate.m */,
-				3FB1380F1E56D72200989426 /* ViewController.h */,
-				3FB138101E56D72200989426 /* ViewController.m */,
 				3FB138121E56D72200989426 /* Main.storyboard */,
-				3FB138151E56D72200989426 /* Assets.xcassets */,
+				3FB1384F1E57AE0800989426 /* SwipeViewController.h */,
+				3FB138501E57AE0800989426 /* SwipeViewController.m */,
+				3FB138201E56D8BE00989426 /* PanViewController.h */,
+				3FB138211E56D8BE00989426 /* PanViewController.m */,
+				3FB1384C1E57A5A200989426 /* PinchViewController.h */,
+				3FB1384D1E57A5A200989426 /* PinchViewController.m */,
+				3FB138491E57A33500989426 /* TapViewController.h */,
+				3FB1384A1E57A33500989426 /* TapViewController.m */,
 				3FB138171E56D72200989426 /* LaunchScreen.storyboard */,
-				3FB1381A1E56D72200989426 /* Info.plist */,
 				3FB138091E56D72200989426 /* Supporting Files */,
 			);
 			path = "iOS Gestures";
@@ -74,6 +88,12 @@
 		3FB138091E56D72200989426 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FB1380C1E56D72200989426 /* AppDelegate.h */,
+				3FB1380D1E56D72200989426 /* AppDelegate.m */,
+				3FB1380F1E56D72200989426 /* ViewController.h */,
+				3FB138101E56D72200989426 /* ViewController.m */,
+				3FB138151E56D72200989426 /* Assets.xcassets */,
+				3FB1381A1E56D72200989426 /* Info.plist */,
 				3FB1380A1E56D72200989426 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB138221E56D8BE00989426 /* PanViewController.m in Sources */,
+				3FB1384E1E57A5A200989426 /* PinchViewController.m in Sources */,
+				3FB1384B1E57A33500989426 /* TapViewController.m in Sources */,
 				3FB138111E56D72200989426 /* ViewController.m in Sources */,
 				3FB1380E1E56D72200989426 /* AppDelegate.m in Sources */,
 				3FB1380B1E56D72200989426 /* main.m in Sources */,
+				3FB138511E57AE0800989426 /* SwipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
